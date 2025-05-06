@@ -1,0 +1,215 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content inside the rectangle */
+  padding: 0; /* Remove extra padding */
+  width: 1150px; /* Make it span the full width of the page */
+  height: 60px; /* Set a fixed height for the rectangle */
+  background-color: #f2f2f2; /* Add a background color to make it visible */
+  border: none; /* Remove any borders */
+  margin: 60px auto; /* Center the line */
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+}
+
+main {
+  max-width: 1100px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.form-box {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding-right: 40px;
+}
+
+.form-box:last-child {
+  border-right: none;
+  padding-left: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #004f6e;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.checkbox {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #bbb;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-link {
+  text-align: right;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+  color: #004f6e;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links .first-row {
+  margin-bottom: 20px;
+}
+
+.footer-links .second-row {
+  margin-left: -980px;
+}
+
+.separator {
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: #333;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 450;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .form-box {
+    padding: 0;
+    border: none;
+  }
+}
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid #d8d8d8; /* Black line */
+  margin: 10px auto; /* Center the line */
+  width: 1150px;
+}
+
+.footer-brand p {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Align the text to the left */
+  margin: 0; /* Remove default margin */
+  width: 870px;
+  color: #000000;
+}
+
+.footer-copyright p {
+  font-weight: normal; /* Keep the text normal */
+  text-align: center; /* Center-align the text */
+  margin: 0; /* Remove default margin */
+  width: 1020px;
+}
+
+.footer-brand {
+  margin-top: 20px; /* Add spacing above the brand text */
+  margin-bottom: 10px;
+}
+
+.footer-copyright {
+  margin-top: 10px; /* Add spacing above the copyright text */
+}
+
+.icon-container {
+  display: flex;
+  gap: 5px; /* Space between icons */
+  margin-left: 1290px; /* Move the icons to the right */
+}
+
+.footer-brand {
+  margin-top: 30px; /* Add spacing above the brand text */
+}
+
+.footer-copyright {
+  margin-top: 20px; /* Add spacing above the copyright text */
+}
+
+.logo {
+  position: absolute; /* Position the logo relative to the page */
+  top: 12px; /* Align to the top of the page */
+  left: 386px; /* Align to the left of the page */
+  width: 80px; /* Adjust the size of the logo */
+  height: 60px;
+  background-color: transparent; /* Remove any background color */
+}
+
+.logo img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain aspect ratio */
+}
