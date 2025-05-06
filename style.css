@@ -7,19 +7,15 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center content inside the rectangle */
-  padding: 0; /* Remove extra padding */
+  justify-content: flex-start; /* Center content inside the rectangle */
+  padding: 0 5px; /* Remove extra padding */
   width: 1150px; /* Make it span the full width of the page */
   height: 60px; /* Set a fixed height for the rectangle */
   background-color: #f2f2f2; /* Add a background color to make it visible */
   border: none; /* Remove any borders */
   margin: 60px auto; /* Center the line */
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-  background-color: #000;
+  color: #000000;
+  font-size: 25px;
 }
 
 main {
@@ -34,7 +30,7 @@ main {
 .form-box {
   flex: 1;
   border-right: 1px solid #ccc;
-  padding-right: 40px;
+  padding-right: 100px;
 }
 
 .form-box:last-child {
@@ -78,14 +74,16 @@ input[type="password"] {
   margin-right: 5px;
 }
 
+
 button {
-  background-color: #bbb;
+  background-color: #000000;
   border: none;
   padding: 12px;
-  width: 100%;
+  width: 400px;
   font-size: 16px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .btn-black {
@@ -203,7 +201,7 @@ footer a:hover {
 .logo {
   position: absolute; /* Position the logo relative to the page */
   top: 12px; /* Align to the top of the page */
-  left: 386px; /* Align to the left of the page */
+  left: 382px; /* Align to the left of the page */
   width: 80px; /* Adjust the size of the logo */
   height: 60px;
   background-color: transparent; /* Remove any background color */
@@ -212,4 +210,12 @@ footer a:hover {
 .logo img {
   max-width: 100%; /* Ensure the image fits within the container */
   height: auto; /* Maintain aspect ratio */
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 400px; /* Set consistent width */
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box; /* Include padding in width */
 }
